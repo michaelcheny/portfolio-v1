@@ -542,7 +542,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Consolas, Menlo, Monaco, "Liberation Mono", "Courier New", monospace;
 }
 
 /**
@@ -6297,7 +6297,7 @@ video {
 }
 
 .font-mono {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Consolas, Menlo, Monaco, "Liberation Mono", "Courier New", monospace;
 }
 
 .font-hairline {
@@ -20467,7 +20467,7 @@ video {
   }
 
   .sm\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Consolas, Menlo, Monaco, "Liberation Mono", "Courier New", monospace;
   }
 
   .sm\:font-hairline {
@@ -34638,7 +34638,7 @@ video {
   }
 
   .md\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Consolas, Menlo, Monaco, "Liberation Mono", "Courier New", monospace;
   }
 
   .md\:font-hairline {
@@ -48809,7 +48809,7 @@ video {
   }
 
   .lg\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Consolas, Menlo, Monaco, "Liberation Mono", "Courier New", monospace;
   }
 
   .lg\:font-hairline {
@@ -62980,7 +62980,7 @@ video {
   }
 
   .xl\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Consolas, Menlo, Monaco, "Liberation Mono", "Courier New", monospace;
   }
 
   .xl\:font-hairline {
