@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <div id="navbar">
       <nav class="flex items-center justify-between flex-wrap bg-dracula1 p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           {/* <svg
