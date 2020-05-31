@@ -4,6 +4,8 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import AboutContainer from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
+import BlogSection from "./components/BlogSection";
+import ContactSection from "./components/ContactSection";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
       <h1 className="text-6xl">PLACEHOLDER FOR IMAGE??</h1>
       <AboutContainer />
       <ProjectsSection />
+      <BlogSection />
+      <ContactSection />
     </div>
   );
 };

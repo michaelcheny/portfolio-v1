@@ -3,8 +3,10 @@ import React from "react";
 const ProjectsSection = () => {
   return (
     <div className="h-screen max-w-screen-lg mx-auto">
-      <h1 className="text-5xl text-gray-500">Projects</h1>
-      <p className="text-dracula4">
+      <h1 className="text-5xl text-gray-500" id="projects">
+        Projects
+      </h1>
+      <p className="text-gray-400">
         Well, to be honest, I'm kind of grossed out with the sexual nature of how everything unfolded. I
         didn't know how sexual dragons were. I kind of just wanted to do some D&D stuff, y'know? I've
         replaced them both as the de facto patriarch of your family and your universe. Your mom wouldn't

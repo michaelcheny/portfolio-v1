@@ -1,5 +1,5 @@
 import React from "react";
-import { animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll, Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -32,27 +32,38 @@ const Navbar = () => {
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div class="text-sm lg:flex-grow">
-            <a
-              href="#about"
+            <Link
+              to="about"
+              smooth={true}
+              duration={400}
               class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4"
             >
               About
-            </a>
-            <a
-              href="#projects"
+            </Link>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={400}
               class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4"
             >
               Projects
-            </a>
-            <a
-              href="#blog"
+            </Link>
+            <Link
+              to="blog"
+              smooth={true}
+              duration={400}
               class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4"
             >
               Blog
-            </a>
-            <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3">
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={400}
+              class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3"
+            >
               Contact
-            </a>
+            </Link>
           </div>
           <div>
             <a
