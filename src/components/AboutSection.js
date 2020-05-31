@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutContainer = () => {
   return (
-    <div className="h-screen">
+    <div className="h-screen max-w-screen-lg mx-auto">
       <h1 className="text-5xl text-gray-500" id="about">
         About
       </h1>
