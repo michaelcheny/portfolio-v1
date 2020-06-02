@@ -1,4 +1,5 @@
 import React from "react";
+import { animateScroll as scroll, Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
@@ -20,6 +21,12 @@ const Footer = () => {
           </li>
         </ul>
         <p className="text-center text-dracula4 py-2">© Michael Chen 2020</p>
+        <span
+          onClick={() => scroll.scrollToTop()}
+          class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-dracula3 hover:bg-dracula4 mt-4 lg:mt-0"
+        >
+          Top
+        </span>
       </div>
     </section>
   );
