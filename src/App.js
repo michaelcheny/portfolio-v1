@@ -9,14 +9,16 @@ import ContactSection from "./components/ContactSection";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <h1 className="text-6xl">PLACEHOLDER FOR IMAGE??</h1>
-      <AboutContainer />
-      <ProjectsSection />
-      <BlogSection />
-      <ContactSection />
-    </div>
+      <div className="px-14">
+        <h1 className="text-6xl">PLACEHOLDER FOR IMAGE??</h1>
+        <AboutContainer />
+        <ProjectsSection />
+        <BlogSection />
+        <ContactSection />
+      </div>
+    </>
   );
 };
 

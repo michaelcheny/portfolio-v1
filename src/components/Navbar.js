@@ -12,14 +12,14 @@ const Navbar = () => {
             height="54"
             viewBox="0 0 54 54"
             xmlns="http://www.w3.org/2000/svg"
-          > */}
-          {/* <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" /> */}
-          {/* </svg> */}
+          >
+            <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
+          </svg> */}
           <span
             class="font-semibold text-xl text-white tracking-tight"
             onClick={() => scroll.scrollToTop()}
           >
-            Placeholder
+            Michael Chen
           </span>
         </div>
         <div class="block lg:hidden">
@@ -76,6 +76,69 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      {/* <nav class="bg-dracula1 px-8 pt-2 shadow-md">
+        <div class="-mb-px flex justify-start flex-wrap">
+          <Link
+            to="about"
+            smooth={true}
+            duration={400}
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4 py-2"
+          >
+            About
+          </Link>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={400}
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4 py-2"
+          >
+            Projects
+          </Link>
+          <Link
+            to="blog"
+            smooth={true}
+            duration={400}
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4 py-2"
+          >
+            Blog
+          </Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={400}
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 py-2"
+          >
+            Contact
+          </Link>
+        </div>
+        <div>
+          <a
+            href="../src/assets/resume/michaelchenresume.pdf"
+            download
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-dracula3 hover:bg-dracula4 mt-4 lg:mt-0"
+          >
+            Resume
+          </a> */}
+      {/* <a
+            class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-8"
+            href="#"
+          >
+            Products
+          </a>
+          <a
+            class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-8"
+            href="#"
+          >
+            Discounts
+          </a>
+          <a
+            class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3"
+            href="#"
+          >
+            Customers
+          </a> */}
+      {/* </div> */}
+      {/* </nav> */}
     </div>
   );
 };

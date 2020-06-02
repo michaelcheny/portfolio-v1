@@ -25,6 +25,28 @@ module.exports = {
       dracula5: "#50FA7B",
       dracula6: "#FF5555",
 
+      nord: {
+        0: "#2E3440",
+        1: "#3B4252",
+        2: "#434C5E",
+        3: "#4C566A",
+        /* NORD SNOW STORM */
+        4: "#D8DEE9",
+        5: "#E5E9F0",
+        6: "#ECEFF4",
+        /* NORD FROST */
+        7: "#8FBCBB",
+        8: "#88C0D0",
+        9: "#81A1C1",
+        10: "#5E81AC",
+        /* NORD AURORA */
+        11: "#BF616A",
+        12: "#D08770",
+        13: "#EBCB8B",
+        14: "#A3BE8C",
+        15: "#B48EAD",
+      },
+
       gray: {
         100: "#f7fafc",
         200: "#edf2f7",

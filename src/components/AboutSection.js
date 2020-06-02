@@ -4,7 +4,7 @@ const AboutContainer = () => {
   return (
     <section className="h-screen max-w-screen-lg mx-auto flex" id="about">
       <div className=" m-auto pb-20">
-        <h1 className="text-5xl text-gray-500">About</h1>
+        <h1 className="text-4xl text-gray-500">About Me</h1>
         <div className="flex mb-4">
           <img
             className="border border-red-500 h-64 w-64"
