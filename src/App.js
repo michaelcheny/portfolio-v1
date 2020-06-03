@@ -13,6 +13,12 @@ import {
   faCoffee,
   faEnvelope,
   faEnvelopeSquare,
+  faAngleDoubleUp,
+  faAngleDoubleDown,
+  faUser,
+  faTasks,
+  faEdit,
+  faEnvelopeOpenText,
 } from "@fortawesome/free-solid-svg-icons";
 
 import Navbar from "./components/Navbar";
@@ -21,6 +27,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import BlogSection from "./components/BlogSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import SideNav from "./components/SideNav";
 
 const App = () => {
   library.add(
@@ -32,11 +39,18 @@ const App = () => {
     faEnvelopeSquare,
     faGithubSquare,
     faMedium,
-    faYoutubeSquare
+    faYoutubeSquare,
+    faAngleDoubleUp,
+    faAngleDoubleDown,
+    faUser,
+    faTasks,
+    faEdit,
+    faEnvelopeOpenText
   );
   return (
     <>
       <Navbar />
+      <SideNav />
       <div className="px-14">
         <h1 className="text-6xl">PLACEHOLDER FOR IMAGE??</h1>
         <AboutContainer />

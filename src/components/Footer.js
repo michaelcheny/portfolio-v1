@@ -11,15 +11,14 @@ const Footer = () => {
 
   return (
     <section id="footer">
-      <div className="block bg-dracula1 p-4 pt-12">
-        <ul className="list-none mx-auto text-center">
+      <div className="block bg-dracula1 h-50 py-2">
+        <ul className="list-none mx-auto text-center pt-8">
           <li className="inline-block mx-2 ">
             <a href="mailto:michaelchengaming@gmail.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon="envelope-square"
                 size="3x"
                 color={bigEmail ? "#8BE9FD" : "#81A1C1"}
-                name="email"
                 onMouseEnter={() => setBigEmail(true)}
                 onMouseLeave={() => setBigEmail(false)}
                 transform={bigEmail ? "grow-4" : null}
@@ -36,7 +35,6 @@ const Footer = () => {
                 icon={["fab", "linkedin"]}
                 size="3x"
                 color={bigLinkedIn ? "#8BE9FD" : "#81A1C1"}
-                name="linkedin"
                 onMouseEnter={() => setBigLinkedin(true)}
                 onMouseLeave={() => setBigLinkedin(false)}
                 transform={bigLinkedIn ? "grow-4" : null}
@@ -49,7 +47,6 @@ const Footer = () => {
                 icon={["fab", "github-square"]}
                 size="3x"
                 color={bigGithub ? "#8BE9FD" : "#81A1C1"}
-                name="github"
                 onMouseEnter={() => setBigGithub(true)}
                 onMouseLeave={() => setBigGithub(false)}
                 transform={bigGithub ? "grow-4" : null}
@@ -66,7 +63,6 @@ const Footer = () => {
                 icon={["fab", "youtube-square"]}
                 size="3x"
                 color={bigYoutube ? "#8BE9FD" : "#81A1C1"}
-                name="youtube"
                 onMouseEnter={() => setBigYoutube(true)}
                 onMouseLeave={() => setBigYoutube(false)}
                 transform={bigYoutube ? "grow-4" : null}
@@ -79,7 +75,6 @@ const Footer = () => {
                 icon={["fab", "medium"]}
                 size="3x"
                 color={bigMedium ? "#8BE9FD" : "#81A1C1"}
-                name="medium"
                 onMouseEnter={() => setBigMedium(true)}
                 onMouseLeave={() => setBigMedium(false)}
                 transform={bigMedium ? "grow-4" : null}
@@ -88,17 +83,11 @@ const Footer = () => {
           </li>
         </ul>
         <p className="text-center text-dracula4 py-6">
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a href="#" onClick={() => scroll.scrollToTop()}>
-            {" "}
             © Michael Chen 2020
           </a>
         </p>
-        {/* <span
-          onClick={() => scroll.scrollToTop()}
-          class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-dracula3 hover:bg-dracula4 mt-4 lg:mt-0"
-        >
-          Top
-        </span> */}
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogSection = () => {
   return (
-    <section className="h-screen max-w-screen-lg mx-auto" id="blog">
+    <section className="h-screen max-w-screen-lg mx-auto" id="blogs">
       <div className="">
         <h1 className="text-5xl text-gray-500">Blogs</h1>
         <p className="text-gray-400">

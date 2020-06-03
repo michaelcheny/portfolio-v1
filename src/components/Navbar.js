@@ -49,7 +49,7 @@ const Navbar = () => {
               Projects
             </Link>
             <Link
-              to="blog"
+              to="blogs"
               smooth={true}
               duration={400}
               class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4"
