@@ -17,11 +17,13 @@ const Footer = () => {
             <a href="mailto:michaelchengaming@gmail.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon="envelope-square"
-                size="3x"
+                size="2x"
                 color={bigEmail ? "#8BE9FD" : "#81A1C1"}
                 onMouseEnter={() => setBigEmail(true)}
                 onMouseLeave={() => setBigEmail(false)}
                 transform={bigEmail ? "grow-4" : null}
+                title="Email"
+                // alt="Email"
               />
             </a>
           </li>
@@ -33,11 +35,12 @@ const Footer = () => {
             >
               <FontAwesomeIcon
                 icon={["fab", "linkedin"]}
-                size="3x"
+                size="2x"
                 color={bigLinkedIn ? "#8BE9FD" : "#81A1C1"}
                 onMouseEnter={() => setBigLinkedin(true)}
                 onMouseLeave={() => setBigLinkedin(false)}
                 transform={bigLinkedIn ? "grow-4" : null}
+                title="Linkedin"
               />
             </a>
           </li>
@@ -45,11 +48,12 @@ const Footer = () => {
             <a href="https://github.com/michaelcheny" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon={["fab", "github-square"]}
-                size="3x"
+                size="2x"
                 color={bigGithub ? "#8BE9FD" : "#81A1C1"}
                 onMouseEnter={() => setBigGithub(true)}
                 onMouseLeave={() => setBigGithub(false)}
                 transform={bigGithub ? "grow-4" : null}
+                title="GitHub"
               />
             </a>
           </li>
@@ -61,11 +65,12 @@ const Footer = () => {
             >
               <FontAwesomeIcon
                 icon={["fab", "youtube-square"]}
-                size="3x"
+                size="2x"
                 color={bigYoutube ? "#8BE9FD" : "#81A1C1"}
                 onMouseEnter={() => setBigYoutube(true)}
                 onMouseLeave={() => setBigYoutube(false)}
                 transform={bigYoutube ? "grow-4" : null}
+                title="YouTube"
               />
             </a>
           </li>
@@ -73,11 +78,12 @@ const Footer = () => {
             <a href="https://medium.com/@michaelychen" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon={["fab", "medium"]}
-                size="3x"
+                size="2x"
                 color={bigMedium ? "#8BE9FD" : "#81A1C1"}
                 onMouseEnter={() => setBigMedium(true)}
                 onMouseLeave={() => setBigMedium(false)}
                 transform={bigMedium ? "grow-4" : null}
+                title="Medium"
               />
             </a>
           </li>

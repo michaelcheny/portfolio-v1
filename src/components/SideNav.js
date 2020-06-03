@@ -1,31 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-scroll";
 
 const SideNav = () => {
+  const [hover, setHoover] = useState({
+    upArrow: false,
+    about: false,
+    projects: false,
+    blogs: false,
+    contact: false,
+    downArrow: false,
+  });
+
   return (
-    <div className="fixed bottom-0 w-40 left-40 right-auto block">
-      <ul className="flex flex-col items-center list-none">
-        <li className="h-10 w-10 inline-block">
-          <Link
-            to="navbar"
-            smooth={true}
-            duration={400}
-            // class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4"
-          >
+    <div className="fixed bottom-0 w-40 left-0 right-auto ">
+      <ul className="flex flex-col justify-center items-center list-none">
+        <li className="h-12 w-12 inline-block">
+          <Link to="navbar" smooth={true} duration={400}>
             <FontAwesomeIcon
               icon="angle-double-up"
-              size="2x"
-              color="#81A1C1"
+              size="1x"
+              color={hover.upArrow ? "#8BE9FD" : "#81A1C1"}
               className="cursor-pointer ml-1"
-              // onMouseEnter={() => setBigEmail(true)}
-              // onMouseLeave={() => setBigEmail(false)}
-              // transform={bigEmail ? "grow-4" : null}
+              onMouseEnter={() => setHoover({ upArrow: true })}
+              onMouseLeave={() => setHoover(false)}
+              transform={hover.upArrow ? "grow-5" : null}
             />
           </Link>
         </li>
 
-        <li className="h-10 w-10">
+        <li className="h-12 w-12">
           <Link
             to="about"
             smooth={true}
@@ -34,80 +38,68 @@ const SideNav = () => {
           >
             <FontAwesomeIcon
               icon="user"
-              size="2x"
-              color="#81A1C1"
+              size="1x"
+              color={hover.about ? "#8BE9FD" : "#81A1C1"}
               className="cursor-pointer"
-              // onMouseEnter={() => setBigEmail(true)}
-              // onMouseLeave={() => setBigEmail(false)}
-              // transform={bigEmail ? "grow-4" : null}
+              onMouseEnter={() => setHoover({ about: true })}
+              onMouseLeave={() => setHoover(false)}
+              transform={hover.about ? "grow-5" : null}
             />
           </Link>
         </li>
 
-        <li className="h-10 w-10">
-          <Link
-            to="projects"
-            smooth={true}
-            duration={400}
-            // class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4"
-          >
+        <li className="h-12 w-12">
+          <Link to="projects" smooth={true} duration={400}>
             <FontAwesomeIcon
               icon="tasks"
-              size="2x"
-              color="#81A1C1"
+              size="1x"
+              color={hover.projects ? "#8BE9FD" : "#81A1C1"}
               className="cursor-pointer"
-              // onMouseEnter={() => setBigEmail(true)}
-              // onMouseLeave={() => setBigEmail(false)}
-              // transform={bigEmail ? "grow-4" : null}
+              onMouseEnter={() => setHoover({ projects: true })}
+              onMouseLeave={() => setHoover(false)}
+              transform={hover.projects ? "grow-5" : null}
             />
           </Link>
         </li>
 
-        <li className="h-10 w-10">
-          <Link
-            to="blogs"
-            smooth={true}
-            duration={400}
-            // class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4"
-          >
+        <li className="h-12 w-12">
+          <Link to="blogs" smooth={true} duration={400}>
             <FontAwesomeIcon
               icon="edit"
-              size="2x"
-              color="#81A1C1"
+              size="1x"
+              color={hover.blogs ? "#8BE9FD" : "#81A1C1"}
               className="cursor-pointer"
-              // onMouseEnter={() => setBigEmail(true)}
-              // onMouseLeave={() => setBigEmail(false)}
-              // transform={bigEmail ? "grow-4" : null}
+              onMouseEnter={() => setHoover({ blogs: true })}
+              onMouseLeave={() => setHoover(false)}
+              transform={hover.blogs ? "grow-5" : null}
             />
           </Link>
         </li>
 
-        <li className="h-10 w-10">
-          <Link
-            to="contact"
-            smooth={true}
-            duration={400}
-            // class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4"
-          >
+        <li className="h-12 w-12">
+          <Link to="contact" smooth={true} duration={400}>
             <FontAwesomeIcon
               icon="envelope-open-text"
-              size="2x"
-              color="#81A1C1"
+              size="1x"
+              color={hover.contact ? "#8BE9FD" : "#81A1C1"}
               className="cursor-pointer"
-              // onMouseEnter={() => setBigEmail(true)}
-              // onMouseLeave={() => setBigEmail(false)}
-              // transform={bigEmail ? "grow-4" : null}
+              onMouseEnter={() => setHoover({ contact: true })}
+              onMouseLeave={() => setHoover(false)}
+              transform={hover.contact ? "grow-4" : null}
             />
           </Link>
         </li>
 
-        <li className="h-10 w-10">
+        <li className="h-12 w-12">
           <Link to="footer" smooth={true} duration={400}>
             <FontAwesomeIcon
               icon="angle-double-down"
-              size="2x"
-              color="#81A1C1"
+              size="1x"
+              color={hover.downArrow ? "#8BE9FD" : "#81A1C1"}
               className="cursor-pointer ml-1"
+              onMouseEnter={() => setHoover({ downArrow: true })}
+              onMouseLeave={() => setHoover(false)}
+              transform={hover.downArrow ? "grow-4" : null}
             />
           </Link>
         </li>
