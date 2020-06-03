@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { animateScroll as scroll, Link } from "react-scroll";
+import { Link } from "react-scroll";
 
 const SideNav = () => {
   return (

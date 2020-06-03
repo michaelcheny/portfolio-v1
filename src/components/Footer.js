@@ -84,7 +84,7 @@ const Footer = () => {
         </ul>
         <p className="text-center text-dracula4 py-6">
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-          <a href="#" onClick={() => scroll.scrollToTop()}>
+          <a href="#" onClick={() => scroll.scrollToTop()} className="hover:text-dracula3">
             © Michael Chen 2020
           </a>
         </p>
