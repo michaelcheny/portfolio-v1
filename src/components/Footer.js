@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { animateScroll as scroll, Link } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
@@ -11,13 +11,13 @@ const Footer = () => {
 
   return (
     <section id="footer">
-      <div className="block bg-dracula1 p-12">
+      <div className="block bg-dracula1 p-4 pt-12">
         <ul className="list-none mx-auto text-center">
-          <li className="inline-block mx-1 ">
+          <li className="inline-block mx-2 ">
             <a href="mailto:michaelchengaming@gmail.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon="envelope-square"
-                size="2x"
+                size="3x"
                 color={bigEmail ? "#8BE9FD" : "#81A1C1"}
                 name="email"
                 onMouseEnter={() => setBigEmail(true)}
@@ -26,7 +26,7 @@ const Footer = () => {
               />
             </a>
           </li>
-          <li className="inline-block mx-1">
+          <li className="inline-block mx-2">
             <a
               href="https://www.linkedin.com/in/michaelchen13/"
               target="_blank"
@@ -34,7 +34,7 @@ const Footer = () => {
             >
               <FontAwesomeIcon
                 icon={["fab", "linkedin"]}
-                size="2x"
+                size="3x"
                 color={bigLinkedIn ? "#8BE9FD" : "#81A1C1"}
                 name="linkedin"
                 onMouseEnter={() => setBigLinkedin(true)}
@@ -43,11 +43,11 @@ const Footer = () => {
               />
             </a>
           </li>
-          <li className="inline-block mx-1 ">
+          <li className="inline-block mx-2 ">
             <a href="https://github.com/michaelcheny" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon={["fab", "github-square"]}
-                size="2x"
+                size="3x"
                 color={bigGithub ? "#8BE9FD" : "#81A1C1"}
                 name="github"
                 onMouseEnter={() => setBigGithub(true)}
@@ -56,7 +56,7 @@ const Footer = () => {
               />
             </a>
           </li>
-          <li className="inline-block mx-1 ">
+          <li className="inline-block mx-2 ">
             <a
               href="https://www.youtube.com/channel/UCsVPeLiZClEYtyPHfweRniw?view_as=subscriber"
               target="_blank"
@@ -64,7 +64,7 @@ const Footer = () => {
             >
               <FontAwesomeIcon
                 icon={["fab", "youtube-square"]}
-                size="2x"
+                size="3x"
                 color={bigYoutube ? "#8BE9FD" : "#81A1C1"}
                 name="youtube"
                 onMouseEnter={() => setBigYoutube(true)}
@@ -73,11 +73,11 @@ const Footer = () => {
               />
             </a>
           </li>
-          <li className="inline-block mx-1 ">
+          <li className="inline-block mx-2 ">
             <a href="https://medium.com/@michaelychen" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon={["fab", "medium"]}
-                size="2x"
+                size="3x"
                 color={bigMedium ? "#8BE9FD" : "#81A1C1"}
                 name="medium"
                 onMouseEnter={() => setBigMedium(true)}
@@ -87,8 +87,11 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <p className="text-center text-dracula4 py-6" onClick={() => scroll.scrollToTop()}>
-          © Michael Chen 2020
+        <p className="text-center text-dracula4 py-6">
+          <a href="#" onClick={() => scroll.scrollToTop()}>
+            {" "}
+            © Michael Chen 2020
+          </a>
         </p>
         {/* <span
           onClick={() => scroll.scrollToTop()}
