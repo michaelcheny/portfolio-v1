@@ -1,7 +1,13 @@
 import React from "react";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab, faLinkedin, faGithubSquare, faMedium } from "@fortawesome/free-brands-svg-icons";
+import {
+  fab,
+  faLinkedin,
+  faGithubSquare,
+  faMedium,
+  faYoutubeSquare,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faCheckSquare,
   faCoffee,
@@ -25,7 +31,8 @@ const App = () => {
     faLinkedin,
     faEnvelopeSquare,
     faGithubSquare,
-    faMedium
+    faMedium,
+    faYoutubeSquare
   );
   return (
     <>

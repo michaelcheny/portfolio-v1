@@ -1,4 +1,5 @@
 import React from "react";
+import headshot from "../assets/images/DSC_0163.JPG";
 
 const AboutContainer = () => {
   return (
@@ -6,11 +7,7 @@ const AboutContainer = () => {
       <div className=" m-auto pb-20">
         <h1 className="text-4xl text-gray-500">About Me</h1>
         <div className="flex mb-4">
-          <img
-            className="border border-red-500 h-64 w-64"
-            src="https://cdn1.iconfinder.com/data/icons/image-manipulations/100/13-512.png"
-            alt="placeholder"
-          />
+          <img className="w-auto h-64" src={headshot} alt="placeholder" />
           <p className="text-gray-400 pt-12 pl-3">
             God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank
             me. Nobody's killing me until after I catch my wife with another man. Listen to your sister
