@@ -25,6 +25,7 @@ const SideNav = () => {
               onMouseEnter={() => setHoover({ upArrow: true })}
               onMouseLeave={() => setHoover(false)}
               transform={hover.upArrow ? "grow-5" : null}
+              title="Go back to top"
             />
           </Link>
         </li>
@@ -44,6 +45,7 @@ const SideNav = () => {
               onMouseEnter={() => setHoover({ about: true })}
               onMouseLeave={() => setHoover(false)}
               transform={hover.about ? "grow-5" : null}
+              title="Go to about"
             />
           </Link>
         </li>
@@ -58,6 +60,7 @@ const SideNav = () => {
               onMouseEnter={() => setHoover({ projects: true })}
               onMouseLeave={() => setHoover(false)}
               transform={hover.projects ? "grow-5" : null}
+              title="Go to projects"
             />
           </Link>
         </li>
@@ -72,6 +75,7 @@ const SideNav = () => {
               onMouseEnter={() => setHoover({ blogs: true })}
               onMouseLeave={() => setHoover(false)}
               transform={hover.blogs ? "grow-5" : null}
+              title="Go to blogs"
             />
           </Link>
         </li>
@@ -86,6 +90,7 @@ const SideNav = () => {
               onMouseEnter={() => setHoover({ contact: true })}
               onMouseLeave={() => setHoover(false)}
               transform={hover.contact ? "grow-4" : null}
+              title="Go to contact"
             />
           </Link>
         </li>
@@ -100,6 +105,7 @@ const SideNav = () => {
               onMouseEnter={() => setHoover({ downArrow: true })}
               onMouseLeave={() => setHoover(false)}
               transform={hover.downArrow ? "grow-4" : null}
+              title="Go to bottom"
             />
           </Link>
         </li>
