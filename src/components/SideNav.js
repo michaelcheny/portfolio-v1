@@ -31,12 +31,7 @@ const SideNav = () => {
         </li>
 
         <li className="h-12 w-12">
-          <Link
-            to="about"
-            smooth={true}
-            duration={400}
-            // class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4"
-          >
+          <Link to="about" smooth={true} duration={400}>
             <FontAwesomeIcon
               icon="user"
               size="1x"

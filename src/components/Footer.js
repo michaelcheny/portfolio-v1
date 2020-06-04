@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <section id="footer">
-      <div className="block bg-dracula1 h-50 py-2">
+      <div className="flex flex-col bg-dracula1  py-2">
         <ul className="list-none mx-auto text-center pt-8">
           <li className="inline-block mx-2 ">
             <a href="mailto:michaelchengaming@gmail.com" target="_blank" rel="noopener noreferrer">

@@ -2,12 +2,10 @@ import React from "react";
 
 const ProjectsSection = () => {
   return (
-    <section className="h-screen max-w-screen-lg mx-auto">
-      <div>
-        <h1 className="text-5xl text-gray-500" id="projects">
-          Projects
-        </h1>
-        <p className="text-gray-400">
+    <section className="h-screen max-w-screen-lg mx-auto flex border border-dracula6" id="projects">
+      <div className="m-auto mt-40 border border-dracula5">
+        <h1 className="text-5xl text-gray-500">Projects</h1>
+        {/* <p className="text-gray-400">
           Well, to be honest, I'm kind of grossed out with the sexual nature of how everything unfolded.
           I didn't know how sexual dragons were. I kind of just wanted to do some D&D stuff, y'know? I've
           replaced them both as the de facto patriarch of your family and your universe. Your mom
@@ -28,7 +26,7 @@ const ProjectsSection = () => {
           I can't see the ants from over here, I just assumed that was um.. Turd Man, Wiggly Turd Man.
           The trick to cereal is keeping 70% of it above the milk. "And"? What more do you want tacked on
           to this? I turned myself into a pickle, and 9/11 was an inside job?"
-        </p>
+        </p> */}
       </div>
     </section>
   );
