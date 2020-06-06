@@ -5,6 +5,7 @@ const ProjectsSection = () => {
     <section className="h-screen max-w-screen-lg mx-auto flex border border-dracula6" id="projects">
       <div className="m-auto mt-40 border border-dracula5">
         <h1 className="text-5xl text-gray-500">Projects</h1>
+
         {/* <p className="text-gray-400">
           Well, to be honest, I'm kind of grossed out with the sexual nature of how everything unfolded.
           I didn't know how sexual dragons were. I kind of just wanted to do some D&D stuff, y'know? I've
