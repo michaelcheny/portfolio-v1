@@ -1,5 +1,5 @@
 import React from "react";
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   fab,
@@ -28,6 +28,7 @@ import BlogSection from "./components/BlogSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import SideNav from "./components/SideNav";
+import BlogPage from "./containers/BlogPage";
 
 const App = () => {
   library.add(
@@ -49,16 +50,23 @@ const App = () => {
   );
   return (
     <>
-      <Navbar />
-      <SideNav />
-      <div className="px-14">
-        <h1 className="text-6xl">PLACEHOLDER FOR IMAGE??</h1>
-        <AboutContainer />
-        <ProjectsSection />
-        <BlogSection />
-        <ContactSection />
-        <Footer />
-      </div>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact>
+            <SideNav />
+            <div className="px-14">
+              <h1 className="text-6xl">PLACEHOLDER FOR IMAGE??</h1>
+              <AboutContainer />
+              <ProjectsSection />
+              {/* <BlogSection /> */}
+              <ContactSection />
+              <Footer />
+            </div>
+          </Route>
+          <Route path="/blogs" component={BlogPage} />
+        </Switch>
+      </Router>
     </>
   );
 };
