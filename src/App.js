@@ -24,11 +24,12 @@ import {
 import Navbar from "./components/Navbar";
 import AboutContainer from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
-import BlogSection from "./components/BlogSection";
+// import BlogSection from "./components/BlogSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import SideNav from "./components/SideNav";
 import BlogPage from "./containers/BlogPage";
+import ResumePage from "./containers/ResumePage";
 
 const App = () => {
   library.add(
@@ -65,6 +66,7 @@ const App = () => {
             </div>
           </Route>
           <Route path="/blogs" component={BlogPage} />
+          <Route path="/resume" component={ResumePage} />
         </Switch>
       </Router>
     </>

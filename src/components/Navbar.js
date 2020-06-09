@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { animateScroll as scroll, Link } from "react-scroll";
 import { Link as Navlink, useLocation } from "react-router-dom";
-import g from "../assets/resume/michaelchenresume.pdf";
 
 const Navbar = () => {
   const [shown, setShown] = useState(false);
@@ -84,13 +83,13 @@ const Navbar = () => {
             )}
           </div>
           <div>
-            <a
-              href="../assets/resume/michaelchenresume.pdf"
-              download
+            <Navlink
+              to="/resume"
+              // target="_blank"
               class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-dracula3 hover:bg-dracula4 mt-4 lg:mt-0"
             >
               Resume
-            </a>
+            </Navlink>
           </div>
         </div>
       </nav>

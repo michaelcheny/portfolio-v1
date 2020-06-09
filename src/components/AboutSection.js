@@ -12,10 +12,13 @@ import Redux from "../assets/images/reduxIcon.png";
 
 const AboutContainer = () => {
   return (
-    <section className="h-screen max-w-screen-lg mx-auto flex flex-col" id="about">
-      <div className=" m-auto pb-20">
+    <section
+      className="h-screen max-w-screen-lg mx-auto flex flex-col border border-dracula6"
+      id="about"
+    >
+      <div className=" m-auto pb-20 border border-dracula5">
         <h1 className="text-4xl text-gray-500">About Me</h1>
-        <div className="flex mb-4">
+        <div className="flex mb-4 sm:flex-col md:flex-row">
           <img className="w-auto h-64" src={headshot} alt="placeholder" />
           <p className="text-gray-400 pt-12 pl-3">
             God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank
