@@ -31,7 +31,7 @@ const AboutContainer = () => {
           </p>
           {/* add icons here */}
         </div>
-        <div className="flex flex-row justify-start">
+        <div className=" inline-flex flex-row justify-start border border-dracula3">
           <a target="_blank" rel="noopener noreferrer" href="https://icons8.com/icon/20909/html-5">
             <img src={Html} alt="HTML5 Language Icon" title="HTML" className="flex h-10" />
           </a>

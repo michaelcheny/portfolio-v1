@@ -13,7 +13,7 @@ const SideNav = () => {
   });
 
   return (
-    <div className="fixed object-none object-left bottom-0 w-40  border border-dracula6">
+    <div className="hidden sm:block fixed object-none object-left bottom-0 w-40  border border-dracula6">
       <ul className="flex flex-col justify-center items-center list-none">
         <li className="h-12 w-12 inline-block">
           <Link to="navbar" smooth={true} duration={400}>

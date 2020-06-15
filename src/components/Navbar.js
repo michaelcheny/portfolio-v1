@@ -20,7 +20,7 @@ const Navbar = () => {
             </span>
           </Navlink>
         </div>
-        <div className="block lg:hidden">
+        <div className="block md:hidden">
           <button
             className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
             onClick={() => setShown((prev) => !prev)}
@@ -34,16 +34,16 @@ const Navbar = () => {
         <div
           className={` ${
             shown ? null : "sm:hidden"
-          } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
+          } w-full block flex-grow md:flex md:items-center md:w-auto`}
         >
-          <div className="text-sm lg:flex-grow">
+          <div className="text-sm md:flex-grow">
             {location.pathname === "/" ? (
               <>
                 <Link
                   to="about"
                   smooth={true}
                   duration={400}
-                  className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4 cursor-pointer"
+                  className="block mt-4 md:inline-block md:mt-0 text-white hover:text-dracula3 mr-4 cursor-pointer"
                 >
                   About
                 </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
                   to="projects"
                   smooth={true}
                   duration={400}
-                  className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4 cursor-pointer"
+                  className="block mt-4 md:inline-block md:mt-0 text-white hover:text-dracula3 mr-4 cursor-pointer"
                 >
                   Projects
                 </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
                   to="/blogs"
                   smooth={true}
                   duration={400}
-                  className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 mr-4 cursor-pointer"
+                  className="block mt-4 md:inline-block md:mt-0 text-white hover:text-dracula3 mr-4 cursor-pointer"
                 >
                   Blogs
                 </Navlink>
@@ -68,7 +68,7 @@ const Navbar = () => {
                   to="contact"
                   smooth={true}
                   duration={400}
-                  className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 cursor-pointer"
+                  className="block mt-4 md:inline-block md:mt-0 text-white hover:text-dracula3 cursor-pointer"
                 >
                   Contact
                 </Link>
@@ -76,7 +76,7 @@ const Navbar = () => {
             ) : (
               <Navlink
                 to="/"
-                className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-dracula3 cursor-pointer"
+                className="block mt-4 md:inline-block md:mt-0 text-white hover:text-dracula3 cursor-pointer"
               >
                 Home
               </Navlink>
