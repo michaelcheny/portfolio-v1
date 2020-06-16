@@ -714,6 +714,7 @@ module.exports = {
     pointerEvents: ["responsive"],
     position: ["responsive"],
     resize: ["responsive"],
+    scrollSnapType: ["responsive"],
     space: ["responsive"],
     stroke: ["responsive"],
     strokeWidth: ["responsive"],
@@ -752,5 +753,5 @@ module.exports = {
     transitionDelay: ["responsive"],
   },
   corePlugins: {},
-  plugins: [],
+  plugins: [require("tailwindcss-scroll-snap")],
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectsSection = () => {
   return (
-    <section className="h-screen max-w-screen-lg mx-auto flex border border-dracula6" id="projects">
+    <section className="h-screen max-w-screen-xl mx-auto flex border border-dracula6" id="projects">
       <div className="m-auto mt-40 border border-dracula5">
         <h1 className="text-5xl text-gray-500">Projects</h1>
 

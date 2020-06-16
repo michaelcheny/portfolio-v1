@@ -13,14 +13,14 @@ import Redux from "../assets/images/reduxIcon.png";
 const AboutContainer = () => {
   return (
     <section
-      className="h-screen max-w-screen-lg mx-auto flex flex-col border border-dracula6"
+      className="h-screen max-w-screen-xl mx-auto flex flex-col border border-dracula6"
       id="about"
     >
       <div className=" m-auto pb-20 border border-dracula5">
         <h1 className="text-4xl text-gray-500">About Me</h1>
-        <div className="flex mb-4 sm:flex-col md:flex-row">
-          <img className="w-auto h-64" src={headshot} alt="placeholder" />
-          <p className="text-gray-400 pt-12 pl-3">
+        <div className="flex mb-4 flex-col md:flex-row">
+          <img className="w-auto md:h-64" src={headshot} alt="placeholder" />
+          <p className="text-gray-400 pt-12 text-center">
             God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank
             me. Nobody's killing me until after I catch my wife with another man. Listen to your sister
             Morty; to live is to risk it all; otherwise you're just an inert chunk of randomly assembled

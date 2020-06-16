@@ -30,6 +30,7 @@ import Footer from "./components/Footer";
 import SideNav from "./components/SideNav";
 import BlogPage from "./containers/BlogPage";
 import ResumePage from "./containers/ResumePage";
+import MainImage from "./components/MainImage";
 
 const App = () => {
   library.add(
@@ -57,7 +58,8 @@ const App = () => {
           <Route path="/" exact>
             <SideNav />
             <div className="px-14 mx-auto border border-dracula3">
-              <h1 className="text-6xl">PLACEHOLDER FOR IMAGE??</h1>
+              {/* <h1 className="text-6xl">PLACEHOLDER FOR IMAGE??</h1> */}
+              <MainImage />
               <AboutContainer />
               <ProjectsSection />
               {/* <BlogSection /> */}
