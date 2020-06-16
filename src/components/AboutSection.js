@@ -13,22 +13,25 @@ import Redux from "../assets/images/reduxIcon.png";
 const AboutContainer = () => {
   return (
     <section
-      className="h-screen max-w-screen-xl mx-auto flex flex-col justify-between p-4 sm:p-10 border border-dracula6"
+      className="h-screen max-w-screen-xl mx-auto flex flex-col justify-between p-2 sm:p-8 border border-dracula6"
       id="about"
     >
       <div className=" m-auto pb-2 border border-dracula5">
         <h1 className="text-4xl text-gray-500">About Me</h1>
-        <div className="flex mb-4 flex-col md:flex-row">
-          <img className=" object-scale-down h-64 md:h-80 lg:h-96" src={headshot} alt="placeholder" />
-          <p className=" text-nord-10 pt-12 px-12 font-bold leading-tight lg:text-1xl text-left">
-            God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank
-            me. Nobody's killing me until after I catch my wife with another man. Listen to your sister
-            Morty; to live is to risk it all; otherwise you're just an inert chunk of randomly assembled
-            molecules drifting wherever the universe blows you. Oh, I'm sorry, Jerry, I didn't see you
-            there, how much of that did you hear? Do you know how many characters there are in the
-            Simpsons Morty? There's like a-a billion characters, M-Morty. There was an episode where
-            Former President BUSH was their neighbor!
-          </p>
+        <div className="flex mb-4 flex-col lg:flex-row">
+          <img className=" object-scale-down h-56 md:h-64 lg:h-72" src={headshot} alt="placeholder" />
+          <div className=" text-nord-10 pt-6 my-auto sm:pt-8 lg:pt-0 px-12  leading-snug max-w-xl">
+            <p className="pb-2">Hello, I am a software engineer based in San Francisco, California.</p>
+            <p className="pb-2">
+              I've been a tech enthusiast since I was a youngster. I completed Flatiron's Full Stack
+              Software Engineering curriculum in early 2020. I build things to help simplify and enhance
+              people's lives. My goal is to build ____.
+            </p>
+            <p>
+              I'm also an air fryer enthusiast, a sous vide fanatic, and a coffee connoisseur. I love all
+              kinds of pasta.
+            </p>
+          </div>
           {/* add icons here */}
         </div>
         {/* <div className=" inline-flex flex-row justify-start border border-dracula3">
