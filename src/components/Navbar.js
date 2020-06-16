@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div id="navbar">
-      <nav className="flex items-center justify-between flex-wrap bg-dracula1 p-6">
+      <nav className="flex items-center justify-between flex-wrap bg-dracula1 p-6 ">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <Navlink to="/">
             <span
@@ -33,7 +33,7 @@ const Navbar = () => {
         </div>
         <div
           className={` ${
-            shown ? null : "sm:hidden"
+            shown ? null : "hidden"
           } w-full block flex-grow md:flex md:items-center md:w-auto`}
         >
           <div className="text-sm md:flex-grow">

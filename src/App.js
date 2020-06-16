@@ -56,7 +56,7 @@ const App = () => {
         <Switch>
           <Route path="/" exact>
             <SideNav />
-            <div className="px-14">
+            <div className="px-14 mx-auto border border-dracula3">
               <h1 className="text-6xl">PLACEHOLDER FOR IMAGE??</h1>
               <AboutContainer />
               <ProjectsSection />
