@@ -48,6 +48,14 @@ const Navbar = () => {
                   About
                 </Link>
                 <Link
+                  to="skills"
+                  smooth={true}
+                  duration={400}
+                  className="block mt-4 md:inline-block md:mt-0 text-white hover:text-dracula3 mr-4 cursor-pointer"
+                >
+                  Skills
+                </Link>
+                <Link
                   to="projects"
                   smooth={true}
                   duration={400}

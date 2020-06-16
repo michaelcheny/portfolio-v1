@@ -31,6 +31,7 @@ import SideNav from "./components/SideNav";
 import BlogPage from "./containers/BlogPage";
 import ResumePage from "./containers/ResumePage";
 import MainImage from "./components/MainImage";
+import SkillsSection from "./components/SkillsSection";
 
 const App = () => {
   library.add(
@@ -61,6 +62,7 @@ const App = () => {
               {/* <h1 className="text-6xl">PLACEHOLDER FOR IMAGE??</h1> */}
               <MainImage />
               <AboutContainer />
+              <SkillsSection />
               <ProjectsSection />
               {/* <BlogSection /> */}
               <ContactSection />

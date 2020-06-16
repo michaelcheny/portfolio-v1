@@ -13,14 +13,14 @@ import Redux from "../assets/images/reduxIcon.png";
 const AboutContainer = () => {
   return (
     <section
-      className="h-screen max-w-screen-xl mx-auto flex flex-col border border-dracula6"
+      className="h-screen max-w-screen-xl mx-auto flex flex-col p-4 sm:p-10 border border-dracula6"
       id="about"
     >
       <div className=" m-auto pb-20 border border-dracula5">
         <h1 className="text-4xl text-gray-500">About Me</h1>
         <div className="flex mb-4 flex-col md:flex-row">
-          <img className="w-auto md:h-64" src={headshot} alt="placeholder" />
-          <p className="text-gray-400 pt-12 text-center">
+          <img className="sm:w-auto md:h-64" src={headshot} alt="placeholder" />
+          <p className=" text-nord-10 pt-12 font-bold leading-tight md:text-2xl text-center">
             God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank
             me. Nobody's killing me until after I catch my wife with another man. Listen to your sister
             Morty; to live is to risk it all; otherwise you're just an inert chunk of randomly assembled
@@ -31,7 +31,7 @@ const AboutContainer = () => {
           </p>
           {/* add icons here */}
         </div>
-        <div className=" inline-flex flex-row justify-start border border-dracula3">
+        {/* <div className=" inline-flex flex-row justify-start border border-dracula3">
           <a target="_blank" rel="noopener noreferrer" href="https://icons8.com/icon/20909/html-5">
             <img src={Html} alt="HTML5 Language Icon" title="HTML" className="flex h-10" />
           </a>
@@ -77,7 +77,7 @@ const AboutContainer = () => {
         </div>
         <a target="_blank" rel="noopener noreferrer" href="https://icons8.com">
           icons by Icons8
-        </a>
+        </a> */}
       </div>{" "}
     </section>
   );
