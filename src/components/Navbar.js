@@ -51,6 +51,7 @@ const Navbar = () => {
                   to="skills"
                   smooth={true}
                   duration={400}
+                  offset={-150}
                   className="block mt-4 md:inline-block md:mt-0 text-white hover:text-dracula3 mr-4 cursor-pointer"
                 >
                   Skills
