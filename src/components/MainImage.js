@@ -6,7 +6,7 @@ const MainImage = () => {
     <div
       className="bg-cover bg-center h-half lg:h-screen"
       style={{
-        backgroundImage: `url("https://baconmockup.com/1920/1080")`,
+        backgroundImage: `url("http://via.placeholder.com/1920x1080")`,
       }}
     >
       {/* <image className="" /> */}

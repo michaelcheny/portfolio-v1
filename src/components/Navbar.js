@@ -8,7 +8,7 @@ const Navbar = () => {
   let location = useLocation();
 
   return (
-    <section id="navbar">
+    <section id="navbar" className="">
       <nav className="flex items-center justify-between flex-wrap bg-dracula1 p-6 ">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <Navlink to="/">

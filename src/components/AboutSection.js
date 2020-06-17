@@ -1,14 +1,14 @@
 import React from "react";
 import headshot from "../assets/images/DSC_0163.JPG";
-import Html from "../assets/images/html5Icon.png";
-import Css from "../assets/images/cssIcon.png";
-import Ruby from "../assets/images/rubyIcon.png";
-import Sql from "../assets/images/sqlIcon.png";
-import Rails from "../assets/images/railsIcon.png";
-import Javascript from "../assets/images/javascriptIcon.png";
-import Git from "../assets/images/gitIcon.png";
-import ReactIcon from "../assets/images/reactIcon.png";
-import Redux from "../assets/images/reduxIcon.png";
+// import Html from "../assets/images/html5Icon.png";
+// import Css from "../assets/images/cssIcon.png";
+// import Ruby from "../assets/images/rubyIcon.png";
+// import Sql from "../assets/images/sqlIcon.png";
+// import Rails from "../assets/images/railsIcon.png";
+// import Javascript from "../assets/images/javascriptIcon.png";
+// import Git from "../assets/images/gitIcon.png";
+// import ReactIcon from "../assets/images/reactIcon.png";
+// import Redux from "../assets/images/reduxIcon.png";
 
 const AboutContainer = () => {
   return (
@@ -19,7 +19,11 @@ const AboutContainer = () => {
       <div className=" m-auto pb-2 border border-dracula5">
         <h1 className="text-4xl text-gray-500">About Me</h1>
         <div className="flex mb-4 flex-col lg:flex-row">
-          <img className=" object-scale-down h-56 md:h-64 lg:h-72" src={headshot} alt="placeholder" />
+          <img
+            className=" object-scale-down h-56 md:h-64 lg:h-72 xl:h-80 lg:pl-8"
+            src={headshot}
+            alt="placeholder"
+          />
           <div className=" text-nord-10 pt-6 my-auto sm:pt-8 lg:pt-0 px-12  leading-snug max-w-xl">
             <p className="pb-2">Hello, I am a software engineer based in San Francisco, California.</p>
             <p className="pb-2">

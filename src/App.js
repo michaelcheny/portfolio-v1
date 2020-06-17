@@ -66,8 +66,8 @@ const App = () => {
               <ProjectsSection />
               {/* <BlogSection /> */}
               <ContactSection />
-              <Footer />
             </div>
+            <Footer />
           </Route>
           <Route path="/blogs" component={BlogPage} />
           <Route path="/resume" component={ResumePage} />
