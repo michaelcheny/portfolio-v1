@@ -12,11 +12,8 @@ import headshot from "../assets/images/DSC_0163.JPG";
 
 const AboutContainer = () => {
   return (
-    <section
-      className="h-screen mx-auto flex flex-col justify-between  border border-nord-13"
-      id="about"
-    >
-      <div className=" m-auto pb-2 border border-dracula5">
+    <section className="h-screen flex justify-center border border-nord-13" id="about">
+      <div className=" md:w-4/5 flex flex-col md:mx-8 pb-2 border border-dracula5 justify-center">
         <h1 className="text-4xl text-gray-500">About Me</h1>
         <div className="flex mb-4 flex-col lg:flex-row">
           <img
@@ -24,8 +21,8 @@ const AboutContainer = () => {
             src={headshot}
             alt="placeholder"
           />
-          <div className=" text-nord-10 pt-6 my-auto sm:pt-8 lg:pt-0 px-12  leading-snug max-w-xl">
-            <p className="pb-2">Hello, I am a software engineer based in San Francisco, California.</p>
+          <div className=" text-nord-10 pt-6 my-auto sm:pt-8 lg:pt-0 px-12 self-center leading-snug max-w-xl">
+            <p className="pb-2 ">Hello, I am a software engineer based in San Francisco, California.</p>
             <p className="pb-2">
               I've been a tech enthusiast since I was a youngster. I completed Flatiron's Full Stack
               Software Engineering curriculum in early 2020. I build things to help simplify and enhance
