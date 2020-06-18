@@ -13,7 +13,7 @@ import headshot from "../assets/images/DSC_0163.JPG";
 const AboutContainer = () => {
   return (
     <section
-      className="h-screen max-w-screen-xl mx-auto flex flex-col justify-between p-2 sm:p-8 border border-dracula6"
+      className="h-screen mx-auto flex flex-col justify-between  border border-nord-13"
       id="about"
     >
       <div className=" m-auto pb-2 border border-dracula5">
