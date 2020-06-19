@@ -12,16 +12,26 @@ import headshot from "../assets/images/DSC_0163.JPG";
 
 const AboutContainer = () => {
   return (
-    <section className="h-screen flex justify-center border border-nord-13" id="about">
-      <div className=" md:w-4/5 flex flex-col md:mx-8 pb-2 border border-dracula5 justify-center">
-        <h1 className="text-4xl text-gray-500">About Me</h1>
-        <div className="flex mb-4 flex-col lg:flex-row">
+    <section className="h-screen flex justify-center" id="about">
+      <div className=" md:w-4/5 flex flex-col md:mx-8 pb-2 justify-center">
+        <h3 className="text-2xl">
+          About Me
+          <hr className=" w-5/12 h-0 pb-4 border-dracula4 border-t" />
+        </h3>
+        <div className="flex mb-4 flex-col lg:flex-row relative">
           <img
-            className=" object-scale-down h-56 md:h-64 lg:h-72 xl:h-80 lg:pl-8"
+            className=" object-scale-down h-56 md:h-64 lg:h-72 xl:h-80 lg:pl-8 "
             src={headshot}
             alt="placeholder"
           />
-          <div className=" text-nord-10 pt-6 my-auto sm:pt-8 lg:pt-0 px-12 self-center leading-snug max-w-xl">
+          {/* <svg
+            className="absolute inset-y-0 h-full fill-current bg-dracula2 w-32 -ml-16 object-right"
+            preserveAspectRatio="none"
+            viewBox="0 0 100 100"
+          >
+            <polygon points="50,0 100,0 50,100 0,100" />
+          </svg> */}
+          <div className=" pt-6 my-auto sm:pt-8 lg:pt-0 px-12 self-center leading-snug max-w-xl ">
             <p className="pb-2 ">Hello, I am a software engineer based in San Francisco, California.</p>
             <p className="pb-2">
               I've been a tech enthusiast since I was a youngster. I completed Flatiron's Full Stack

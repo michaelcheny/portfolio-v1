@@ -9,11 +9,11 @@ const Navbar = () => {
 
   return (
     <section id="navbar" className="">
-      <nav className="flex items-center justify-between flex-wrap bg-dracula1 p-6 ">
-        <div className="flex items-center flex-shrink-0 text-white mr-6">
+      <nav className="flex items-center justify-between flex-wrap p-6 bg-background-secondary">
+        <div className="flex items-center flex-shrink-0  mr-6">
           <Navlink to="/">
             <span
-              className="font-semibold text-xl text-white tracking-tight cursor-pointer hover:text-dracula3"
+              className="font-semibold text-xl tracking-tight cursor-pointer hover:text-copy-secondary"
               onClick={() => scroll.scrollToTop()}
             >
               Michael Chen
@@ -22,7 +22,7 @@ const Navbar = () => {
         </div>
         <div className="block md:hidden">
           <button
-            className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+            className="flex items-center px-3 py-2 border rounded text-copy-primary border-nord-4 hover:text-copy-secondary hover:border-copy-secondary"
             onClick={() => setShown((prev) => !prev)}
           >
             <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

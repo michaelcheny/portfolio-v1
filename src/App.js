@@ -52,7 +52,7 @@ const App = () => {
     faEnvelopeOpenText
   );
   return (
-    <>
+    <div className="theme-dark bg-background-primary text-copy-primary">
       <Router>
         <Navbar />
         <Switch>
@@ -78,7 +78,7 @@ const App = () => {
         </Switch>
         <Footer />
       </Router>
-    </>
+    </div>
   );
 };
 

@@ -12,6 +12,17 @@ module.exports = {
       xl: "1280px",
     },
     colors: {
+      background: {
+        primary: "var(--bg-background-primary)",
+        secondary: "var(--bg-background-secondary)",
+        ternary: "var(--bg-background-ternary)",
+      },
+
+      copy: {
+        primary: "var(--text-copy-primary)",
+        secondary: "var(--text-copy-secondary)",
+      },
+
       transparent: "transparent",
       current: "currentColor",
 

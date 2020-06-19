@@ -12,7 +12,7 @@ import Redux from "../assets/images/reduxIcon.png";
 const SkillsSection = () => {
   return (
     <section id="skills" className="flex flex-col h-half border border-dracula6">
-      <div className="mx-16 my-auto flex flex-row justify-between border border-dracula5">
+      <div className="mx-16 my-auto flex flex-row  flex-wrap justify-between border border-dracula5">
         <a target="_blank" rel="noopener noreferrer" href="https://icons8.com/icon/20909/html-5">
           <img src={Html} alt="HTML5 Language Icon" title="HTML" className="flex h-10 sm:h-16" />
         </a>
