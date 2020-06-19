@@ -29,12 +29,14 @@ module.exports = {
       black: "#000",
       white: "#fff",
 
-      dracula1: "#282A36",
-      dracula2: "#44475A",
-      dracula3: "#8BE9FD",
-      dracula4: "#6272A4",
-      dracula5: "#50FA7B",
-      dracula6: "#FF5555",
+      dracula: {
+        1: "#282A36",
+        2: "#44475A",
+        3: "#8BE9FD",
+        4: "#6272A4",
+        5: "#50FA7B",
+        6: "#FF5555",
+      },
 
       nord: {
         0: "#2E3440",

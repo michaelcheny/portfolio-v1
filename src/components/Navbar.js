@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <section id="navbar" className="">
-      <nav className="flex items-center justify-between flex-wrap p-6 bg-background-secondary">
+      <nav className="flex items-center justify-between flex-wrap p-6 bg-background-secondary shadow-outline z-20">
         <div className="flex items-center flex-shrink-0  mr-6">
           <Navlink to="/">
             <span
@@ -22,7 +22,7 @@ const Navbar = () => {
         </div>
         <div className="block md:hidden">
           <button
-            className="flex items-center px-3 py-2 border rounded text-copy-primary border-nord-4 hover:bg-dracula4 hover:text-copy-secondary hover:border-transparent"
+            className="flex items-center px-3 py-2 border rounded text-copy-primary border-nord-4 hover:bg-dracula-4 hover:text-copy-secondary hover:border-transparent"
             onClick={() => setShown((prev) => !prev)}
           >
             <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +95,7 @@ const Navbar = () => {
             <Navlink
               to="/resume"
               // target="_blank"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded border-copy-primary hover:border-transparent hover:text-copy-secondary hover:bg-dracula4 mt-4 lg:mt-0"
+              class="inline-block text-sm px-4 py-2 leading-none border rounded border-copy-primary hover:border-transparent hover:text-copy-secondary hover:bg-dracula-4 mt-4 lg:mt-0"
             >
               Resume
             </Navlink>

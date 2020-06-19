@@ -19875,11 +19875,11 @@ video {
 }
 
 .theme-light {
-  --bg-background-primary: white;
-  --bg-background-secondary: #f7fafc;
+  --bg-background-primary: #d8dee9;
+  --bg-background-secondary: #81a1c1;
   --bg-background-ternary: #434c5e;
-  --text-copy-primary: #1f3c75;
-  --text-copy-secondary: #e2e8f0;
+  --text-copy-primary: #2e3440;
+  --text-copy-secondary: #4c566a;
 }
 
 .theme-dark {

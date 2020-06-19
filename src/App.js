@@ -62,7 +62,7 @@ const App = () => {
             <div className="flex justify-center">
               {/* <div className="hidden lg:w-64  lg:inline-block bg-pink-800 border border-orange-700 ml-0"></div> */}
 
-              <div className=" mx-auto border border-dracula3 flex-grow inline-block ">
+              <div className=" mx-auto border border-dracula-3 flex-grow inline-block ">
                 <AboutContainer />
                 <SkillsSection />
                 <ProjectsSection />
