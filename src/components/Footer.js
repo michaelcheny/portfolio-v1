@@ -3,25 +3,27 @@ import { animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
-  const [bigEmail, setBigEmail] = useState(false);
-  const [bigLinkedIn, setBigLinkedin] = useState(false);
-  const [bigGithub, setBigGithub] = useState(false);
-  const [bigYoutube, setBigYoutube] = useState(false);
-  const [bigMedium, setBigMedium] = useState(false);
+  const [hover, setHover] = useState({
+    email: false,
+    linkedin: false,
+    github: false,
+    youtube: false,
+    medium: false,
+  });
 
   return (
     <section id="footer">
-      <div className="flex flex-col bg-dracula1  py-2">
+      <div className="flex flex-col bg-background-secondary  py-2">
         <ul className="list-none mx-auto text-center pt-8">
           <li className="inline-block mx-2 ">
             <a href="mailto:michaelchengaming@gmail.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
+                className="hover:text-copy-secondary"
                 icon="envelope-square"
                 size="2x"
-                color={bigEmail ? "#8BE9FD" : "#81A1C1"}
-                onMouseEnter={() => setBigEmail(true)}
-                onMouseLeave={() => setBigEmail(false)}
-                transform={bigEmail ? "grow-4" : null}
+                onMouseEnter={() => setHover({ email: true })}
+                onMouseLeave={() => setHover(false)}
+                transform={hover.email ? "grow-4" : null}
                 title="Email"
                 // alt="Email"
               />
@@ -34,12 +36,12 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon
+                className="hover:text-copy-secondary"
                 icon={["fab", "linkedin"]}
                 size="2x"
-                color={bigLinkedIn ? "#8BE9FD" : "#81A1C1"}
-                onMouseEnter={() => setBigLinkedin(true)}
-                onMouseLeave={() => setBigLinkedin(false)}
-                transform={bigLinkedIn ? "grow-4" : null}
+                onMouseEnter={() => setHover({ linkedin: true })}
+                onMouseLeave={() => setHover(false)}
+                transform={hover.linkedin ? "grow-4" : null}
                 title="Linkedin"
               />
             </a>
@@ -47,12 +49,12 @@ const Footer = () => {
           <li className="inline-block mx-2 ">
             <a href="https://github.com/michaelcheny" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
+                className="hover:text-copy-secondary"
                 icon={["fab", "github-square"]}
                 size="2x"
-                color={bigGithub ? "#8BE9FD" : "#81A1C1"}
-                onMouseEnter={() => setBigGithub(true)}
-                onMouseLeave={() => setBigGithub(false)}
-                transform={bigGithub ? "grow-4" : null}
+                onMouseEnter={() => setHover({ github: true })}
+                onMouseLeave={() => setHover(false)}
+                transform={hover.github ? "grow-4" : null}
                 title="GitHub"
               />
             </a>
@@ -64,12 +66,12 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon
+                className="hover:text-copy-secondary"
                 icon={["fab", "youtube-square"]}
                 size="2x"
-                color={bigYoutube ? "#8BE9FD" : "#81A1C1"}
-                onMouseEnter={() => setBigYoutube(true)}
-                onMouseLeave={() => setBigYoutube(false)}
-                transform={bigYoutube ? "grow-4" : null}
+                onMouseEnter={() => setHover({ youtube: true })}
+                onMouseLeave={() => setHover({ youtube: false })}
+                transform={hover.youtube ? "grow-4" : null}
                 title="YouTube"
               />
             </a>
@@ -77,20 +79,20 @@ const Footer = () => {
           <li className="inline-block mx-2 ">
             <a href="https://medium.com/@michaelychen" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
+                className=" hover:text-copy-secondary"
                 icon={["fab", "medium"]}
                 size="2x"
-                color={bigMedium ? "#8BE9FD" : "#81A1C1"}
-                onMouseEnter={() => setBigMedium(true)}
-                onMouseLeave={() => setBigMedium(false)}
-                transform={bigMedium ? "grow-4" : null}
+                onMouseEnter={() => setHover({ medium: true })}
+                onMouseLeave={() => setHover({ medium: false })}
+                transform={hover.medium ? "grow-4" : null}
                 title="Medium"
               />
             </a>
           </li>
         </ul>
-        <p className="text-center text-dracula4 py-6">
+        <p className="text-center py-6">
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-          <a href="#" onClick={() => scroll.scrollToTop()} className="hover:text-dracula3">
+          <a href="#" onClick={() => scroll.scrollToTop()} className="hover:text-copy-secondary">
             © Michael Chen 2020
           </a>
         </p>

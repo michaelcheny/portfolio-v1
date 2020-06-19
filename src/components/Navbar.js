@@ -22,7 +22,7 @@ const Navbar = () => {
         </div>
         <div className="block md:hidden">
           <button
-            className="flex items-center px-3 py-2 border rounded text-copy-primary border-nord-4 hover:text-copy-secondary hover:border-copy-secondary"
+            className="flex items-center px-3 py-2 border rounded text-copy-primary border-nord-4 hover:bg-dracula4 hover:text-copy-secondary hover:border-transparent"
             onClick={() => setShown((prev) => !prev)}
           >
             <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +43,7 @@ const Navbar = () => {
                   to="about"
                   smooth={true}
                   duration={400}
-                  className="block mt-4 md:inline-block md:mt-0 text-white hover:text-dracula3 mr-4 cursor-pointer"
+                  className="block mt-4 md:inline-block md:mt-0  hover:text-copy-secondary mr-4 cursor-pointer"
                 >
                   About
                 </Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
                   smooth={true}
                   duration={400}
                   offset={-150}
-                  className="block mt-4 md:inline-block md:mt-0 text-white hover:text-dracula3 mr-4 cursor-pointer"
+                  className="block mt-4 md:inline-block md:mt-0  hover:text-copy-secondary mr-4 cursor-pointer"
                 >
                   Skills
                 </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
                   to="projects"
                   smooth={true}
                   duration={400}
-                  className="block mt-4 md:inline-block md:mt-0 text-white hover:text-dracula3 mr-4 cursor-pointer"
+                  className="block mt-4 md:inline-block md:mt-0 hover:text-copy-secondary mr-4 cursor-pointer"
                 >
                   Projects
                 </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
                   to="/blogs"
                   smooth={true}
                   duration={400}
-                  className="block mt-4 md:inline-block md:mt-0 text-white hover:text-dracula3 mr-4 cursor-pointer"
+                  className="block mt-4 md:inline-block md:mt-0 hover:text-copy-secondary mr-4 cursor-pointer"
                 >
                   Blogs
                 </Navlink>
@@ -77,7 +77,7 @@ const Navbar = () => {
                   to="contact"
                   smooth={true}
                   duration={400}
-                  className="block mt-4 md:inline-block md:mt-0 text-white hover:text-dracula3 cursor-pointer"
+                  className="block mt-4 md:inline-block md:mt-0 hover:text-copy-secondary cursor-pointer"
                 >
                   Contact
                 </Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
             ) : (
               <Navlink
                 to="/"
-                className="block mt-4 md:inline-block md:mt-0 text-white hover:text-dracula3 cursor-pointer"
+                className="block mt-4 md:inline-block md:mt-0 hover:text-copy-secondary cursor-pointer"
               >
                 Home
               </Navlink>
@@ -95,7 +95,7 @@ const Navbar = () => {
             <Navlink
               to="/resume"
               // target="_blank"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-dracula3 hover:bg-dracula4 mt-4 lg:mt-0"
+              class="inline-block text-sm px-4 py-2 leading-none border rounded border-copy-primary hover:border-transparent hover:text-copy-secondary hover:bg-dracula4 mt-4 lg:mt-0"
             >
               Resume
             </Navlink>
