@@ -3,7 +3,7 @@ import { animateScroll as scroll, Link } from "react-scroll";
 import { Link as Navlink, useLocation } from "react-router-dom";
 import ThemeDropdown from "./ThemeDropdown";
 
-const Navbar = () => {
+const Navbar = ({ setTheme }) => {
   const [shown, setShown] = useState(false);
 
   let location = useLocation();
@@ -82,13 +82,8 @@ const Navbar = () => {
                 >
                   Contact
                 </Link>
-                {/* <div
-                  className="block mt-4 md:inline-block md:mt-0 hover:text-copy-secondary cursor-pointer relative"
-                  onClick={}
-                > */}
-                {/* Theme (dropdown) */}
-                <ThemeDropdown />
-                {/* </div> */}
+
+                <ThemeDropdown setTheme={setTheme} />
               </>
             ) : (
               <Navlink
@@ -102,6 +97,7 @@ const Navbar = () => {
           <div>
             <Navlink
               to="/resume"
+              // new tab... yay or nay?
               // target="_blank"
               class="inline-block text-sm px-4 py-2 leading-none border rounded border-copy-primary hover:border-transparent hover:text-copy-secondary hover:bg-dracula-4 mt-4 lg:mt-0"
             >

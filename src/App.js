@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -51,10 +51,13 @@ const App = () => {
     faEdit,
     faEnvelopeOpenText
   );
+
+  const [theme, setTheme] = useState("light");
+
   return (
-    <div className="theme-dark bg-background-primary text-copy-primary">
+    <div className={`theme-${theme} bg-background-primary text-copy-primary`}>
       <Router>
-        <Navbar />
+        <Navbar setTheme={setTheme} />
         <Switch>
           <Route path="/" exact>
             {/* <SideNav /> */}
