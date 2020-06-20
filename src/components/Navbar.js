@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { animateScroll as scroll, Link } from "react-scroll";
 import { Link as Navlink, useLocation } from "react-router-dom";
+import ThemeDropdown from "./ThemeDropdown";
 
 const Navbar = () => {
   const [shown, setShown] = useState(false);
@@ -77,10 +78,17 @@ const Navbar = () => {
                   to="contact"
                   smooth={true}
                   duration={400}
-                  className="block mt-4 md:inline-block md:mt-0 hover:text-copy-secondary cursor-pointer"
+                  className="block mt-4 md:inline-block md:mt-0 hover:text-copy-secondary mr-4 cursor-pointer"
                 >
                   Contact
                 </Link>
+                {/* <div
+                  className="block mt-4 md:inline-block md:mt-0 hover:text-copy-secondary cursor-pointer relative"
+                  onClick={}
+                > */}
+                {/* Theme (dropdown) */}
+                <ThemeDropdown />
+                {/* </div> */}
               </>
             ) : (
               <Navlink

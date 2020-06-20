@@ -4,7 +4,7 @@ import Placeholder from "../assets/images/1920x1080.png";
 const MainImage = () => {
   return (
     <div
-      className="flex justify-center bg-cover bg-center h-half lg:h-screen z-0"
+      className="flex justify-center bg-cover bg-center h-half lg:h-screen z-10"
       style={{
         backgroundImage: `url("http://via.placeholder.com/1920x1080")`,
       }}

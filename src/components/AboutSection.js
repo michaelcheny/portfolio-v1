@@ -20,7 +20,7 @@ const AboutContainer = () => {
         </h3>
         <div className="flex mb-4 flex-col lg:flex-row relative">
           <img
-            className=" object-scale-down h-56 md:h-64 lg:h-72 xl:h-80 lg:pl-8 "
+            className=" object-scale-down h-56 md:h-64 lg:h-72 xl:h-80 lg:ml-8 "
             src={headshot}
             alt="placeholder"
           />
