@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import Icon from "../assets/images/theme.png";
 // might remove theme icon later
 
-const themes = ["Dark", "Light", "Dracula", "Nord"];
+const themes = ["Dark", "Light", "Dracula", "Nord", "Monokai"];
 const ThemeDropdown = ({ setTheme }) => {
   const [shown, setShown] = useState(false);
 
@@ -52,6 +52,7 @@ const Theme = ({ theme, setShown, setTheme }) => {
     <span
       onClick={() => {
         setTheme(theme.toLowerCase());
+        localStorage.setItem("theme", theme.toLowerCase());
         setShown(false);
       }}
       className="block px-5 py-1 hover:text-copy-secondary hover:bg-background-primary"

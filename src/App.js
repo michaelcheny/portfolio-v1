@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -52,7 +52,10 @@ const App = () => {
     faEnvelopeOpenText
   );
 
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
+  useEffect(() => {
+    if (localStorage.getItem("theme")) setTheme(localStorage.getItem("theme"));
+  }, []);
 
   return (
     <div className={`theme-${theme} bg-background-primary text-copy-primary`}>

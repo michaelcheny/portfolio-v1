@@ -11,7 +11,23 @@
   --text-copy-secondary: #4c566a;
 }
 
-.theme-dark {
+.theme-dracula {
+  --bg-background-primary: #44475a;
+  --bg-background-secondary: #282a36;
+  --bg-background-ternary: #81a1c1;
+  --text-copy-primary: #cbd5e0;
+  --text-copy-secondary: #88c0d0;
+}
+
+.theme-monokai {
+  --bg-background-primary: #272822;
+  --bg-background-secondary: #272822;
+  --bg-background-ternary: #75715e;
+  --text-copy-primary: #75715e;
+  --text-copy-secondary: #a6e22e;
+}
+
+.theme-nord {
   --bg-background-primary: #44475a;
   --bg-background-secondary: #282a36;
   --bg-background-ternary: #81a1c1;
