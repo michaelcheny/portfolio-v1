@@ -13,9 +13,9 @@ const SideNav = () => {
   });
 
   return (
-    <div className="hidden xl:block fixed object-none object-left bottom-0 w-40  border border-dracula-6">
-      <ul className="flex flex-col justify-center items-center list-none">
-        <li className="h-12 w-12 inline-block">
+    <div className="hidden lg:block w-32 my-56 left-0 bottom-0 fixed border border-dracula-6">
+      <ul className="flex flex-col justify-center items-center list-none pt-6">
+        <li className="h-12 w-12">
           <Link to="navbar" smooth={true} duration={400}>
             <FontAwesomeIcon
               icon="angle-double-up"

@@ -35,9 +35,9 @@ const Navbar = ({ setTheme }) => {
         <div
           className={` ${
             shown ? null : "hidden"
-          } w-full block flex-grow md:flex md:items-center md:w-auto`}
+          } w-full block flex-grow md:flex md:items-center md:w-auto md:ml-1`}
         >
-          <div className="text-sm md:flex-grow">
+          <div className="text-sm md:flex-grow ">
             {location.pathname === "/" ? (
               <>
                 <Link
@@ -95,14 +95,16 @@ const Navbar = ({ setTheme }) => {
             )}
           </div>
           <div>
-            <Navlink
-              to="/resume"
-              // new tab... yay or nay?
-              // target="_blank"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded border-copy-primary hover:border-transparent hover:text-copy-secondary hover:bg-background-ternary mt-4 lg:mt-0"
-            >
-              Resume
-            </Navlink>
+            {location.pathname === "/" ? (
+              <Navlink
+                to="/resume"
+                // new tab... yay or nay?
+                // target="_blank"
+                class="inline-block text-sm px-4 py-2 leading-none border rounded border-copy-primary hover:border-transparent hover:text-copy-secondary hover:bg-background-ternary mt-4 lg:mt-0"
+              >
+                Resume
+              </Navlink>
+            ) : null}
           </div>
         </div>
       </nav>

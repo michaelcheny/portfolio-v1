@@ -19876,10 +19876,18 @@ video {
 
 .theme-light {
   --bg-background-primary: #d8dee9;
-  --bg-background-secondary: #81a1c1;
-  --bg-background-ternary: #434c5e;
+  --bg-background-secondary: #d7dce6;
+  --bg-background-ternary: #cbd5e0;
   --text-copy-primary: #2e3440;
-  --text-copy-secondary: #4c566a;
+  --text-copy-secondary: #4a5568;
+}
+
+.theme-dark {
+  --bg-background-primary: #1a202c;
+  --bg-background-secondary: #141d26;
+  --bg-background-ternary: #4a5568;
+  --text-copy-primary: #e2e8f0;
+  --text-copy-secondary: #b2b2b2;
 }
 
 .theme-dracula {
@@ -19891,19 +19899,19 @@ video {
 }
 
 .theme-monokai {
-  --bg-background-primary: #272822;
+  --bg-background-primary: #272824;
   --bg-background-secondary: #272822;
   --bg-background-ternary: #75715e;
-  --text-copy-primary: #75715e;
+  --text-copy-primary: #75726f;
   --text-copy-secondary: #a6e22e;
 }
 
 .theme-nord {
-  --bg-background-primary: #44475a;
+  --bg-background-primary: #2e3440;
   --bg-background-secondary: #282a36;
-  --bg-background-ternary: #81a1c1;
-  --text-copy-primary: #cbd5e0;
-  --text-copy-secondary: #88c0d0;
+  --bg-background-ternary: #434c5e;
+  --text-copy-primary: #d8dee9;
+  --text-copy-secondary: #5e81ac;
 }
 
 @media (min-width: 640px) {

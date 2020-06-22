@@ -63,8 +63,8 @@ const App = () => {
         <Navbar setTheme={setTheme} />
         <Switch>
           <Route path="/" exact>
-            {/* <SideNav /> */}
             <MainImage />
+            {/* <SideNav /> */}
             <div className="flex justify-center">
               {/* <div className="hidden lg:w-64  lg:inline-block bg-pink-800 border border-orange-700 ml-0"></div> */}
 
