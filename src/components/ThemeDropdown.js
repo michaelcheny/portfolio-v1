@@ -6,18 +6,18 @@ const themes = ["Dark", "Light", "Dracula", "Nord", "Monokai"];
 const ThemeDropdown = ({ setTheme }) => {
   const [shown, setShown] = useState(false);
 
-  const handleEscape = (event) => {
-    if (event.key === "Esc" || event.key === "Escape") {
-      setShown(false);
-    }
-  };
-
   useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === "Esc" || event.key === "Escape") {
+        setShown(false);
+        console.log("poop");
+      }
+    };
     document.addEventListener("keydown", handleEscape);
     return () => {
       document.removeEventListener("keydown", handleEscape);
     };
-  });
+  }, []);
 
   return (
     <div className="block mt-4 md:inline-block md:mt-0 cursor-pointer relative ">

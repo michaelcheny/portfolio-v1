@@ -1,36 +1,28 @@
 import React from "react";
+import * as projects from "../assets/projects/projects.json";
 
 const ProjectsSection = () => {
   return (
-    <section className="h-screen max-w-screen-xl mx-auto flex border border-dracula-6" id="projects">
-      <div className="m-auto mt-40 border border-dracula-5">
-        <h1 className="text-5xl ">Projects</h1>
-
-        {/* <p className="text-gray-400">
-          Well, to be honest, I'm kind of grossed out with the sexual nature of how everything unfolded.
-          I didn't know how sexual dragons were. I kind of just wanted to do some D&D stuff, y'know? I've
-          replaced them both as the de facto patriarch of your family and your universe. Your mom
-          wouldn't have accepted me if I came home without you and your sister, so now you know the real
-          reason I rescued you. I just took over the family, Morty! And if you tell your mom or sister I
-          said any of this, I'll deny it, and they'll take my side because I'm a hero, Morty! And now
-          you're gonna have to go and do whatever I say, Morty! Forever! An-and I-I-I'll go out and I'll
-          find some more of that Mulan szechuan teriyaki dipping sauce, Morty! Th-b-because that's what
-          this is all about Morty! Th-that's my one-armed man! I'm not driven by avenging my dead family,
-          Morty, that was fake! I-I-I'm driven by finding that mcnuggut sauce! I want that Mulan mcnuggut
-          sauce, Morty! That's my series arc, Morty! If it takes nine seasons, I want my mcnuggut dipping
-          sauce szechuan sauce, Morty! That's what's gon-it's gonna take us all the way to the end,
-          Morty! Season nine more seasons, Morty! Nine more seasons until I get that dipping szechuan
-          sauce! For ninety-seven more years, Morty! I want that mcnuggut sauce Morty! Whoa, spoilers!
-          I'm a whole season behind. You look it up, you don't- you don't even know what it means. Those
-          guys are inside you building a piece of shit Ethan! They're inside you building a monument to
-          compromise! Fuck them, fuck those people, fuck this whole thing Ethan. Oh, that's Million Ants.
-          I can't see the ants from over here, I just assumed that was um.. Turd Man, Wiggly Turd Man.
-          The trick to cereal is keeping 70% of it above the milk. "And"? What more do you want tacked on
-          to this? I turned myself into a pickle, and 9/11 was an inside job?"
-        </p> */}
+    <section className="h-screen flex justify-center " id="projects">
+      <div className="flex flex-col justify-center w-4/5 border border-dracula-5">
+        <h3 className="text-2xl">
+          Projects
+          <hr className=" w-5/12 h-0 pb-4 border-background-ternary border-t" />
+        </h3>
+        {console.log(projects.default)}
+        {projects.default.map((project) => (
+          <Project project={project} />
+        ))}
+        {/* <div className="bg-dracula-2 flex flex-col border border-background-ternary">sdf</div> */}
       </div>
     </section>
   );
 };
 
 export default ProjectsSection;
+
+const Project = ({ project }) => {
+  return (
+    <div className="bg-dracula-2 flex flex-col border border-background-ternary">{project.name}</div>
+  );
+};

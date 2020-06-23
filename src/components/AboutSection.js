@@ -16,7 +16,7 @@ const AboutContainer = () => {
       <div className=" md:w-4/5 flex flex-col md:mx-8 pb-2 justify-center">
         <h3 className="text-2xl">
           About Me
-          <hr className=" w-5/12 h-0 pb-4 border-dracula-4 border-t" />
+          <hr className=" w-5/12 h-0 pb-4 border-background-ternary border-t" />
         </h3>
         <div className="flex mb-4 flex-col lg:flex-row relative">
           <img
