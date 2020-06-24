@@ -93,7 +93,7 @@ const Footer = () => {
         <p className="text-center py-6">
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a href="#" onClick={() => scroll.scrollToTop()} className="hover:text-copy-secondary">
-            © Michael Chen 2020
+            Built by Michael Chen
           </a>
         </p>
       </div>

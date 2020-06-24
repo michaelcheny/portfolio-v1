@@ -12,15 +12,15 @@ import headshot from "../assets/images/DSC_0163.JPG";
 
 const AboutContainer = () => {
   return (
-    <section className="h-screen flex justify-center" id="about">
-      <div className=" md:w-4/5 flex flex-col md:mx-8 pb-2 justify-center">
-        <h3 className="text-2xl">
+    <section className="h-screen flex justify-center " id="about">
+      <div className=" md:w-4/5 flex flex-col md:mx-8 pb-2 justify-center items-center max-w-screen-xl border border-dracula-6">
+        <h3 className="text-2xl self-start ml-6">
           About Me
-          <hr className=" w-5/12 h-0 pb-4 border-background-ternary border-t" />
+          <hr className=" w-full h-0 pb-4 border-background-ternary border-t" />
         </h3>
         <div className="flex mb-4 flex-col lg:flex-row relative">
           <img
-            className=" object-scale-down h-56 md:h-64 lg:h-72 xl:h-80 lg:ml-8 "
+            className=" object-scale-down h-56 md:h-64 lg:h-72 xl:h-80 lg:ml-8"
             src={headshot}
             alt="placeholder"
           />
