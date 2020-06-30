@@ -4,12 +4,12 @@ import * as data from "../assets/projects/projects.json";
 const ProjectsSection = () => {
   return (
     <section className="flex justify-center items-center" id="projects">
-      <div className="flex flex-col justify-center items-center w-4/5 border border-dracula-5">
+      <div className="flex flex-col justify-center items-center w-5/6 border border-dracula-5 my-16">
         <h3 className="text-2xl">
           Projects
           <hr className=" w-full h-0 pb-4 border-background-ternary border-t" />
         </h3>
-        <div className="border border-red-500 flex flex-col lg:flex-row w-full flex-wrap  justify-around">
+        <div className=" flex flex-col lg:flex-row w-full flex-wrap  justify-evenly">
           {console.log(data.projects)}
           {data.projects.map((project) => (
             <Project project={project} />
@@ -53,28 +53,24 @@ const Project = ({ project }) => {
     //     </div>
     //   </div>
     // </div>
-    <div className="max-w-md rounded overflow-hidden shadow-md">
+    <div className="max-w-md rounded-sm overflow-hidden shadow-lg mb-4 self-center">
       <img className="w-full" src={project.image} alt="Sunset in the mountains" />
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{project.name}</div>
-        <p className="text-gray-700 text-base">
+        <div className="font-bold text-copy-secondary text-xl mb-2">{project.name}</div>
+        <p className="text-base">
           {project.description} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
           quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
         </p>
       </div>
       <div className="px-6 py-4">
         {project.techStack.map((stack) => (
-          <span className="inline-block bg-background-secondary rounded-sm px-3 py-1 text-sm font-semibold text-copy-primary mr-2">
+          <span className="inline-block bg-background-primary rounded-sm px-3 py-1 text-sm font-semibold text-copy-primary mr-2">
             {stack}
           </span>
         ))}
-
-        {/* <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-          #travel
-        </span>
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-          #winter
-        </span> */}
+        <a className="block" href={project.githubLink}>
+          GitHub
+        </a>
       </div>
     </div>
   );
