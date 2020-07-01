@@ -13,7 +13,7 @@ import headshot from "../assets/images/DSC_0163.JPG";
 const AboutContainer = () => {
   return (
     <section className="h-screen flex justify-center " id="about">
-      <div className=" md:w-4/5 flex flex-col md:mx-8 pb-2 justify-center items-center max-w-screen-xl border border-dracula-6">
+      <div className=" md:w-4/5 flex flex-col md:mx-8 pb-2 justify-center items-center max-w-screen-xl ">
         <h3 className="text-2xl self-start ml-6">
           About Me
           <hr className=" w-full h-0 pb-4 border-background-ternary border-t" />

@@ -6,8 +6,8 @@ import youtubeIcon from "../assets/images/youtube.svg";
 const ProjectsSection = () => {
   return (
     <section className="flex justify-center items-center" id="projects">
-      <div className="flex flex-col justify-center items-center w-5/6 my-32">
-        <h3 className="text-2xl">
+      <div className="flex flex-col justify-center items-center w-4/5 my-32 max-w-screen-xl">
+        <h3 className="text-2xl self-start ml-6">
           Projects
           <hr className=" w-full h-0 pb-4 border-background-ternary border-t" />
         </h3>
