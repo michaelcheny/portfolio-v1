@@ -85,14 +85,13 @@ const Navbar = ({ setTheme }) => {
 
                 <ThemeDropdown setTheme={setTheme} />
               </>
-            ) : (
-              <Navlink
-                to="/"
-                className="block mt-4 md:inline-block md:mt-0 hover:text-copy-secondary cursor-pointer"
-              >
-                Home
-              </Navlink>
-            )}
+            ) : // <Navlink
+            //   to="/"
+            //   className="block mt-4 md:inline-block md:mt-0 hover:text-copy-secondary cursor-pointer"
+            // >
+            //   Home
+            // </Navlink>
+            null}
           </div>
           <div>
             {location.pathname === "/" ? (

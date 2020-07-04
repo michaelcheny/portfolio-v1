@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "../assets/resume/resume.pdf";
+import Resume from "../assets/resume/resume_michael_y_chen.pdf";
 
 const ResumePage = () => {
   return (
