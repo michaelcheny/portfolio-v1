@@ -31,8 +31,8 @@ const AboutContainer = () => {
           >
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg> */}
-          <div className=" pt-6 my-auto sm:pt-8 lg:pt-0 px-12 self-center leading-snug max-w-xl ">
-            <p className="pb-2 ">Hello, I am a software engineer based in San Francisco, California.</p>
+          <div className="pt-6 my-auto sm:pt-8 lg:pt-0 px-12 self-center leading-snug max-w-xl ">
+            <p className="pb-2 ">I am a software engineer based in San Francisco, California.</p>
             <p className="pb-2">
               I've been a tech enthusiast since I was a youngster. I completed Flatiron's Full Stack
               Software Engineering curriculum in early 2020. I build things to help simplify and enhance
